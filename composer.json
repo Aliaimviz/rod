@@ -11,7 +11,8 @@
         "netshell/paypal": "dev-master",
         "aloha/twilio": "^3.0",
         "laravel/socialite": "~2.0",
-        "chumper/zipper": "1.0.x"
+        "chumper/zipper": "1.0.x",
+        "chencha/share": "^5.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -163,6 +163,7 @@ return [
         Chumper\Zipper\ZipperServiceProvider::class,
         Oureastudios\Laravel\BraintreeServiceProvider::class,
         yajra\Datatables\DatatablesServiceProvider::class,
+        Chencha\Share\ShareServiceProvider::class
     ],
 
     /*
@@ -213,6 +214,7 @@ return [
         'Socialize' => Laravel\Socialite\Facades\Socialite::class,
         'Zipper' => Chumper\Zipper\Zipper::class,
         'Datatables' => yajra\Datatables\Datatables::class,
+        'Share' => Chencha\Share\ShareFacade::class,
 
     ],
 
