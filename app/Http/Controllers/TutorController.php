@@ -22,6 +22,7 @@ use Mail;
 use Twilio as Twilio;
 use DB;
 use App\Chat_group;
+use Datatables;
 
 class TutorController extends Controller
 {
@@ -305,4 +306,28 @@ class TutorController extends Controller
 
     }
 
+    public function tutor_bookings(){
+      return view('tutor.tutor_bookings')->with('tutor_globalflag',  $this->tutor_globalflag)
+      ->with('your_note_count', $this->your_note_count);
+    }
+    public function tutorBooking_datatable(){
+      $tutor_id = Tutor::select('tutor_id')->where('users_id',Auth::user()->id)->first();
+      $tutor_bookings = Tutor_booking::select('tutor_bookings.created_at as booking_date','tutor_bookings.*','users.*','notes.note_title')
+      ->join('users','users.id','=','tutor_bookings.student_id')
+      ->join('notes','notes.notes_id','=','tutor_bookings.notes_id')
+      ->where('tutor_bookings.tutor_id',$tutor_id->tutor_id)->get();
+      return Datatables::of($tutor_bookings)->addColumn('status',
+      function($tutor_bookings){
+        if($tutor_bookings->pay_status){
+          return'
+            <span class="label bg-success heading-text">Approved</span>
+            ';
+          }
+          else{
+            return '
+              <span class="label bg-danger heading-text">Pending</span>
+              ';
+            }
+          })->editColumn('data', $tutor_bookings)->make(true);
+    }
 }

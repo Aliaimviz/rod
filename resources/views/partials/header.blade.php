@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="{{asset('/public/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('/public/css/star-rating.css')}}" media="all" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
     <!-- Toastr CSS -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 
@@ -32,6 +31,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
     <script>
         braintree.setup("@braintreeClientToken", "<integration>", options);
     </script>
