@@ -146,7 +146,8 @@
                         <div class="empower col-md-6 col-sm-6 col-xs-12">
                             <h2>EMPOWERING OTHERS</h2>
                             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            <a href="#" class="hoverable-dv fb-click">SHARE WITH FRIENDS</a>
+                            <!-- <a href="#" class="hoverable-dv fb-click">SHARE WITH FRIENDS</a> -->
+                            <div class="sharebox" data-services="facebook twitter tumblr"></div>
                         </div>
 
 

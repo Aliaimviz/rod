@@ -42,6 +42,8 @@
 </footer>
 
 <!-- toastr JS -->
+    <script type="text/javascript" src="{{ asset('public/js/jquery.sharebox.min.js') }}"></script>
+    
 
 
 </body>

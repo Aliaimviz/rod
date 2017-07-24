@@ -272,23 +272,3 @@ Route::get('/login/callback/{provider?}',[
 
 
 
-
-//social sharing
-Route::get('/twitter', function()
-{
-  return Share::load('http://localhost/rod', 'My example')->twitter();
-
-  $view = View::make('social-share::mock');
-
-        View::shouldReceive('make')
-            ->with('social-share::default', [
-                'service' => [ 'uri' => 'http://service.example.com', 'mediaName' => 'media' ],
-                'url' => 'http://localhost/rod',
-                'title' => '',
-                'media' => '',
-                'sep' => '&'
-            ])
-            ->andReturn($view);
-
-        Share::load('http://localhost/rod')->twitter();
-});

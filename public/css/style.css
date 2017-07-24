@@ -955,3 +955,9 @@ a.p-author{
   66.666% { opacity: 1}
   100% { opacity: 0}
 }
+div.sharebox ul.sharebox-buttons li a{
+    color: #fff !important;
+}
+div.sharebox ul.sharebox-buttons li a:hover{
+    color: #000 !important;
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{asset('/public/css/star-rating.css')}}" media="all" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="{{asset('/public/css/jquery.sharebox.css')}}">
     <!-- Toastr CSS -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 
