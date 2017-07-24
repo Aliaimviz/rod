@@ -178,7 +178,7 @@
                     @endif
                                   </td>
 
-                                  <td>May 10,<br/> 2017</td>
+                                  <td>{{$request->created_at}}</td>
                                  </tr>
                                   </span>
 
@@ -276,7 +276,7 @@
 
                         </div>
                     </form>
-                            
+
                                 <!-- <form id="bookingPayForm" method="post" action="{{ route('booking_payment') }}">
                                 <input type="hidden" value="" name="id"/>
                                 <div class="row">
@@ -289,10 +289,10 @@
                                 </div>
                                 </form>
                                 -->
-                            
-                        
-                        
-                            
+
+
+
+
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -416,8 +416,8 @@
             var bookingId = $('#modal_booking_id').val();
             console.log("bookingId modal" + bookingId);
             var tutor_rated = $("#rate_tutor").val();
-            // var tutor_id = $("#rating_tutormodal_id").val(); 
-            // var booking_id = $("#booking_id").val();            
+            // var tutor_id = $("#rating_tutormodal_id").val();
+            // var booking_id = $("#booking_id").val();
             //console.log("tutor_id" + tutor_id);
             var url = "{{route('tutor_ratting_2')}}";
             $.ajaxSetup({

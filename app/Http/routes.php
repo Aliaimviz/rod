@@ -59,6 +59,8 @@ Route::get('/deleteTutor/{id}','DashboardController@deleteTutor')->name('deleteT
 
 
 Route::post('/becomeTutor', 'TutorController@tutor_registeration')->name('tutorRegister');
+Route::get('/stdBookings', 'TutorController@tutor_bookings')->name('tutorbookings');
+Route::get('/tutorBookings_data', 'TutorController@tutorBooking_datatable')->name('tutorbooking_datatable');
 Route::post('/tutorRatting', 'DashboardController@tutor_ratting')->name('tutorRatting');
 Route::post('/tutorRattingSubmit', 'DashboardController@tutor_ratting_2')->name('tutor_ratting_2');
 
